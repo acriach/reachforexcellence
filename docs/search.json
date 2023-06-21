@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quick Introduction to Coding Using R",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "index.html#you-need-a-programme-called-r-and-rstudio-too",
+    "href": "index.html#you-need-a-programme-called-r-and-rstudio-too",
+    "title": "Quick Introduction to Coding Using R",
+    "section": "You Need A Programme Called R and RStudio Too",
+    "text": "You Need A Programme Called R and RStudio Too\nYou need R to be running in the background while you use the nicer-to-use RStudio.\n\nWhen using a university computer, download R and RStudio from AppsAnywhere.\n\nClick the AppsAnywhere icon, scroll down to “Cran R” and click launch.\nOnce R has opened and downloaded onto the computer you can close it.\nNow go back into Apps Anywhere to find RStudio and launch that."
+  },
+  {
+    "objectID": "index.html#basic-layout",
+    "href": "index.html#basic-layout",
+    "title": "Quick Introduction to Coding Using R",
+    "section": "Basic Layout",
+    "text": "Basic Layout\nWhen you first open RStudio, you will see three panels:\n\nThe interactive R console (left)\nEnvironment/History (tabbed in upper right)\nFiles/Plots/Packages/Help/Viewer (tabbed in lower right)\n\n\nOnce you open files, such as R scripts another panel will open in the top left.\n\nClick on the white square with the plus in green icon top left."
+  },
+  {
+    "objectID": "index.html#working-in-rstudio",
+    "href": "index.html#working-in-rstudio",
+    "title": "Quick Introduction to Coding Using R",
+    "section": "Working in RStudio",
+    "text": "Working in RStudio\nWe will write code in our .R file (script) and whenever we want, tell RStudio to run our code.\n\nThe simplest thing you can do with R is use it as a calculator. Type the below into the script:\n\n1 + 100\n\n[1] 101\n\n\n\nTo run a line of your script code in the R console, click on the Run button at the top right of the script.\nR tries to run your code and returns a result in the console window on the bottom left."
+  }
+]

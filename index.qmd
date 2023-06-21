@@ -1,0 +1,67 @@
+---
+title: "Quick Introduction to Coding Using R"
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{r}
+1 + 1
+```
+
+
+<br>
+
+# This is R
+
+## You Need A Programme Called R and RStudio Too
+
+You need R to be running in the background while you use the nicer-to-use RStudio.
+
+<br>
+
+When using a university computer, download R and RStudio from AppsAnywhere. 
+
+* Click the AppsAnywhere icon, scroll down to "Cran R" and click launch. 
+* Once R has opened and downloaded onto the computer you can close it. 
+* Now go back into Apps Anywhere to find RStudio and launch that.
+
+<br>
+
+## Basic Layout
+
+When you first open RStudio, you will see three panels:
+
+  * The interactive R console (left)
+  * Environment/History (tabbed in upper right)
+  * Files/Plots/Packages/Help/Viewer (tabbed in lower right)
+
+![](./images/RStudio_screenshot.png){fig-alt="A screenshot of Rstudio showing eleven menus at the top left. One panel covers the left half with text about the R software. The right is divided into two panels with text saying that the environment is empty in the top panel and a display of the current file directory in the bottom panel."}
+
+Once you open files, such as R scripts another panel will open in the top left.
+
+* Click on the white square with the plus in green icon top left.
+
+![](./images/RStudio_screenshot_script.png){fig-alt="Two zoomed in screenshots of the top left menus in RStudio. The first screenshot shows a black rectangle highlighting an icon which is a white square with a plus inside a green circle. The second screenshot shows a black rectangle highlighting a menu item that reads R Script followed by the associated keyboard shortcut, Ctrl + Shift + N."}
+
+
+
+<br>
+
+## Working in RStudio
+We will write code in our .R file (script) and whenever we want, tell RStudio to run our code.
+
+<br>
+
+The simplest thing you can do with R is use it as a calculator. Type the below into the script:
+
+```{r}
+1 + 100
+```
+
+<br>
+
+To run a line of your script code in the R console, click on the <kbd>Run</kbd> button at the top right of the script.
+
+R tries to run your code and returns a result in the console window on the bottom left.
