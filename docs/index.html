@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Reach For Excellence - Quick Introduction to Coding Using R</title>
+<title>Reach for Excellence - Cracking Codes: Adventures with Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -134,7 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Reach For Excellence</span>
+    <span class="navbar-title">Reach for Excellence</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -144,10 +144,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page">
- <span class="menu-text">Home</span></a>
+ <span class="menu-text">Lesson</span></a>
   </li>  
-  <li class="dropdown-header">
- <span class="menu-text">about.qmd</span></li>
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
@@ -163,12 +161,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#this-is-r" id="toc-this-is-r" class="nav-link active" data-scroll-target="#this-is-r">This is R</a>
-  <ul class="collapse">
-  <li><a href="#you-need-a-programme-called-r-and-rstudio-too" id="toc-you-need-a-programme-called-r-and-rstudio-too" class="nav-link" data-scroll-target="#you-need-a-programme-called-r-and-rstudio-too">You Need A Programme Called R and RStudio Too</a></li>
-  <li><a href="#basic-layout" id="toc-basic-layout" class="nav-link" data-scroll-target="#basic-layout">Basic Layout</a></li>
+  <li><a href="#a-poll" id="toc-a-poll" class="nav-link active" data-scroll-target="#a-poll">A poll</a></li>
+  <li><a href="#opening-rstudio" id="toc-opening-rstudio" class="nav-link" data-scroll-target="#opening-rstudio">Opening RStudio</a></li>
+  <li><a href="#basic-layout" id="toc-basic-layout" class="nav-link" data-scroll-target="#basic-layout">Basic layout</a></li>
   <li><a href="#working-in-rstudio" id="toc-working-in-rstudio" class="nav-link" data-scroll-target="#working-in-rstudio">Working in RStudio</a></li>
+  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
+  <li><a href="#objects-and-assignment" id="toc-objects-and-assignment" class="nav-link" data-scroll-target="#objects-and-assignment">Objects and assignment</a></li>
+  <li><a href="#you-will-get-errors-and-warning-messages" id="toc-you-will-get-errors-and-warning-messages" class="nav-link" data-scroll-target="#you-will-get-errors-and-warning-messages">You will get errors and warning messages</a></li>
+  <li><a href="#the-most-unrealistic-movie-scene-ever" id="toc-the-most-unrealistic-movie-scene-ever" class="nav-link" data-scroll-target="#the-most-unrealistic-movie-scene-ever">The most unrealistic movie scene ever</a></li>
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R Packages</a></li>
+  <li><a href="#reading-in-data" id="toc-reading-in-data" class="nav-link" data-scroll-target="#reading-in-data">Reading in data</a></li>
+  <li><a href="#creating-graphs" id="toc-creating-graphs" class="nav-link" data-scroll-target="#creating-graphs">Creating graphs</a>
+  <ul class="collapse">
+  <li><a href="#making-graphs-with-ggplot2" id="toc-making-graphs-with-ggplot2" class="nav-link" data-scroll-target="#making-graphs-with-ggplot2">Making graphs with ggplot2</a></li>
+  <li><a href="#layers" id="toc-layers" class="nav-link" data-scroll-target="#layers">Layers</a></li>
+  <li><a href="#colour" id="toc-colour" class="nav-link" data-scroll-target="#colour">Colour</a></li>
   </ul></li>
+  <li><a href="#recap-the-lingo" id="toc-recap-the-lingo" class="nav-link" data-scroll-target="#recap-the-lingo">Recap the lingo!</a></li>
+  <li><a href="#how-do-people-become-good-at-coding" id="toc-how-do-people-become-good-at-coding" class="nav-link" data-scroll-target="#how-do-people-become-good-at-coding">How do people become good at coding?</a></li>
+  <li><a href="#exploring-coding-further" id="toc-exploring-coding-further" class="nav-link" data-scroll-target="#exploring-coding-further">Exploring coding further</a></li>
   </ul>
 </nav>
     </div>
@@ -177,7 +188,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quick Introduction to Coding Using R</h1>
+<h1 class="title">Cracking Codes: Adventures with Data</h1>
 </div>
 
 
@@ -192,31 +203,26 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-</div>
 <p><br></p>
-<section id="this-is-r" class="level1">
-<h1>This is R</h1>
-<section id="you-need-a-programme-called-r-and-rstudio-too" class="level2">
-<h2 class="anchored" data-anchor-id="you-need-a-programme-called-r-and-rstudio-too">You Need A Programme Called R and RStudio Too</h2>
-<p>You need R to be running in the background while you use the nicer-to-use RStudio.</p>
+<section id="a-poll" class="level2">
+<h2 class="anchored" data-anchor-id="a-poll">A poll</h2>
+<p>Go to <a href="kahoot.it">kahoot.it</a> to answer some anonymous questions.</p>
 <p><br></p>
-<p>When using a university computer, download R and RStudio from AppsAnywhere.</p>
+</section>
+<section id="opening-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="opening-rstudio">Opening RStudio</h2>
+<p>Everyone will code at the same time. You can code on your own, with a friend or just watch.</p>
+<p>You need a programme called R to be running in the background while you interact with the nicer-to-use RStudio.</p>
+<p>On a university computer, download R and RStudio from AppsAnywhere.</p>
 <ul>
 <li>Click the AppsAnywhere icon, scroll down to “Cran R” and click launch.</li>
 <li>Once R has opened and downloaded onto the computer you can close it.</li>
-<li>Now go back into Apps Anywhere to find RStudio and launch that.</li>
+<li>Now go back into AppsAnywhere to find RStudio and launch that.</li>
 </ul>
 <p><br></p>
 </section>
 <section id="basic-layout" class="level2">
-<h2 class="anchored" data-anchor-id="basic-layout">Basic Layout</h2>
+<h2 class="anchored" data-anchor-id="basic-layout">Basic layout</h2>
 <p>When you first open RStudio, you will see three panels:</p>
 <ul>
 <li>The interactive R console (left)</li>
@@ -226,28 +232,509 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="./images/RStudio_screenshot.png" class="img-fluid" alt="A screenshot of Rstudio showing eleven menus at the top left. One panel covers the left half with text about the R software. The right is divided into two panels with text saying that the environment is empty in the top panel and a display of the current file directory in the bottom panel."></p>
 <p>Once you open files, such as R scripts another panel will open in the top left.</p>
 <ul>
-<li>Click on the white square with the plus in green icon top left.</li>
+<li>Click on the white square with the plus in green icon top left to open a script.</li>
 </ul>
 <p><img src="./images/RStudio_screenshot_script.png" class="img-fluid" alt="Two zoomed in screenshots of the top left menus in RStudio. The first screenshot shows a black rectangle highlighting an icon which is a white square with a plus inside a green circle. The second screenshot shows a black rectangle highlighting a menu item that reads R Script followed by the associated keyboard shortcut, Ctrl + Shift + N."></p>
 <p><br></p>
 </section>
 <section id="working-in-rstudio" class="level2">
 <h2 class="anchored" data-anchor-id="working-in-rstudio">Working in RStudio</h2>
-<p>We will write code in our .R file (script) and whenever we want, tell RStudio to run our code.</p>
-<p><br></p>
+<p>We will write code in our script file and tell RStudio to run our code when we’ve finished writing it.</p>
 <p>The simplest thing you can do with R is use it as a calculator. Type the below into the script:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">100</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">100</span> <span class="sc">-</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To run this line of code from your script in the R console, click on the <kbd>Run</kbd> button at the top right of the script.</p>
+<p>R runs your code and returns a result in the console window on the bottom left.</p>
+<p>R will print out the answer, with a preceding <code>[1]</code>. Don’t worry about this. Think of it as merely indicating what line the output is on.</p>
+<p><br></p>
+<p>If you type in an incomplete command, for example:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">100</span> <span class="sc">-</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>R will show a <code>+</code> in the console window instead of a <code>&gt;</code>. This means it’s waiting for you to complete the command.</p>
+<p>To solve this error, the solution is to hit “Esc”. This cancels the command and RStudio will give you back the “&gt;” prompt.</p>
+<p>This is a big part of coding: writing some code, then problem solving or “debugging” to find out why it won’t work.</p>
+<p><br></p>
+</section>
+<section id="functions" class="level2">
+<h2 class="anchored" data-anchor-id="functions">Functions</h2>
+<p>We use functions to tell R what to do. To use a function, we can type its name, followed by open and closed brackets. Anything we type inside the brackets is called the function’s arguments:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#|eval: FALSE</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">25</span>) <span class="co"># this command calculates the square root of 25</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 101</code></pre>
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+<p>The text after each line of code is called a “comment”. Any comment after a hash symbol # is ignored by R when it runs code. These comments are just for us.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#|eval: FALSE</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">round</span>(<span class="fl">3.1415926</span>, <span class="at">digits =</span> <span class="dv">2</span>) <span class="co"># this prints the number 3.1415926 to 2 decimal places</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3.14</code></pre>
+</div>
+</div>
+<p>The <code>digits =</code> argument in the function round tells R exactly how we what it to run the function. In this case we want to round the number to 2 decimal places.</p>
+<p><br></p>
+<div class="darkorchidbox">
+<div class="center">
+<p><strong>There are thousands of R functions</strong></p>
+</div>
+<p>People don’t try to remember all the names of the many functions in R. You can google them or copy them from other people’s code.</p>
+</div>
+<p><br></p>
+</section>
+<section id="objects-and-assignment" class="level2">
+<h2 class="anchored" data-anchor-id="objects-and-assignment">Objects and assignment</h2>
+<p>We can store values in <strong>objects</strong> using the assignment operator <code>&lt;-</code>, like this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">/</span><span class="dv">40</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Notice that this command does not print a value. Instead, we stored the number for later in the object <code>x</code>. <code>x</code> now contains the number <code>0.025</code>. Look for the <code>Environment</code> tab in one of the panes of RStudio, and you will see that <code>x</code> and its value have appeared.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>x <span class="co"># this prints what's contained in object x</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.025</code></pre>
 </div>
 </div>
 <p><br></p>
-<p>To run a line of your script code in the R console, click on the <kbd>Run</kbd> button at the top right of the script.</p>
-<p>R tries to run your code and returns a result in the console window on the bottom left.</p>
-
-
+<p>Now our object <code>x</code> can be used in place of a number in any function that expects a number:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1581139</code></pre>
+</div>
+</div>
+<p><br></p>
+<p>Object names are not limited to <code>x</code>. You can choose what you name an object.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>the.result <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(x)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>my_number <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fl">3.1415926</span>, <span class="at">digits =</span> <span class="dv">2</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>BigPurpleBanana <span class="ot">&lt;-</span> <span class="dv">101</span> <span class="sc">+</span> <span class="dv">99</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<p>Objects can contain more than one number. For example:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span> <span class="co"># 1:5 means 1,2,3,4 and 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This is incredibly powerful as you can now run a function on all these numbers at once:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.0000000 0.6931472 1.0986123 1.3862944 1.6094379</code></pre>
+</div>
+</div>
+<p>Or use all the numbers in a calculation</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 15</code></pre>
+</div>
+</div>
+<p><br></p>
 </section>
+<section id="you-will-get-errors-and-warning-messages" class="level2">
+<h2 class="anchored" data-anchor-id="you-will-get-errors-and-warning-messages">You will get errors and warning messages</h2>
+<p>Try to run the following code:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(z) <span class="co"># add up the numbers in an object called z</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>myData <span class="ot">&lt;-</span> <span class="st">"elephant"</span> <span class="co"># make a object containing a word</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(myData) <span class="co"># then try to calculate the mean (average) of the word elephant to show a warning message</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<div class="darkorchidbox">
+<div class="center">
+<p><strong>Tip: Errors and Warnings</strong></p>
+</div>
+<p>Errors, like above, are thrown when R cannot proceed with a calculation. Warnings on the other hand usually mean that the function has run, but it may not have worked as expected.</p>
+<p>In both cases, the message that R prints out can give you clues on how to fix a problem.</p>
+</div>
+<p><br></p>
+</section>
+<section id="the-most-unrealistic-movie-scene-ever" class="level2">
+<h2 class="anchored" data-anchor-id="the-most-unrealistic-movie-scene-ever">The most unrealistic movie scene ever</h2>
+<div class="quarto-video ratio ratio-16x9"><iframe src="https://www.youtube.com/embed/uxKmDWDUZ5A" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p><a href="https://www.youtube.com/watch?v=uxKmDWDUZ5A">Hacking scene</a> from The Social Network</p>
+<p>Let’s correct the myths the scene portrays</p>
+<ol class="example" type="1">
+<li>When you are coding you do not continuously type really fast on the keyboard.</li>
+</ol>
+<p><img src="./images/CommentFromCoder.png" class="img-fluid" alt="In real life, a person that is writing code looks like they're in a stupor - most of the time they're not typing, they're just staring blankly in space. Then will come a moment when they type a bit, hit a key, curse a little, and then it's back to stupor-land again.What goes on in their heads might be the most interesting thing that has ever happened on this Earth, but a camera can only see a person sitting in front of a computer, cold coffee and full ashtray on the side.Be glad movies exaggerate, watching a coder code is about as interesting as watching paint dry :D (except if you're not watching them, but their monitor, and you actually understand the implications of what's happening)"> Posted on an online discussion forum called <a href="https://www.quora.com/How-do-Hollywood-movies-and-TV-shows-exaggerate-programming-and-coding-as-done-in-real-life">How do Hollywood movies and TV shows exaggerate programming and coding as done in real life</a></p>
+<ol start="2" class="example" type="1">
+<li><p>Coders don’t often compete aginst each other. In reality, a coders work will not be done in a really competitive atmosphere. Although the industry is seen as competitive by many graduates (<a href="https://www.bcg.com/publications/2020/what-keeps-women-out-data-science">BCG report</a>). Universities and lots of companies will support people to do the best coding they can. Projects often require a team of people to work collaboratively. And there are plenty of people who are kindly giving their time and knowledge to help others solve their coding problems in online forums. For example, people have answered over 23 million questions on one popular forum called <a href="https://stackoverflow.com/">Stack Overflow</a>.</p></li>
+<li><p>Coders aren’t all men. All sorts of people do and can code. While there is a male bias in the industry <a href="https://www.bcg.com/publications/2020/what-keeps-women-out-data-science">BCG report</a> the lack of diversity causes problems, for example, the algorithms behind some AI are biased towards recognising male voices more accurately. Negative perceptions around computer science affect girls decisions to study certain degrees (<a href="https://doi.org/10.1016/j.entcom.2020.100387">Sharma et al., 2021</a>) and mean they might be missing out on interesting and rewarding careers. Groups like <a href="https://rladies.org/">R Ladies</a> aim to encourage coding skills in marginalised groups.</p></li>
+<li><p>The overwhelming majority of people who code are not evil hackers doing harm and creating disruption but working on projects that solve problems and benefit society. To name a few, coders analyse government data to improve systems, create websites and apps that we all use, predict the weather, research new drugs and treatments: there is even an <a href="https://nhsrcommunity.com/">NHS R users group</a>.</p></li>
+</ol>
+<p>Also, I don’t think I’ve ever drank shots or been cheered on by a crowd while writing code!</p>
+<p><br></p>
+</section>
+<section id="r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages">R Packages</h2>
+<p>People all over the world are writing new R functions and uploading them on the internet in <strong>packages</strong> for everyone to use. A package needs to be installed onto your computer, then loaded using the function <code>library</code> before we can use the functions.</p>
+<p>We can install and load these packages using this code:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>)</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"dplyr"</span>)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"palmerpenguins"</span>) <span class="co"># this downloads the packages ggplot that creates graphs, dplyr that manages data and palmerpenguins that contains example data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(palmerpenguins) <span class="co"># library gets the package loaded ready to be used</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br></p>
+<p><img src="./images/lter_penguins.png" class="img-fluid" alt="Three cartoon penguins with chinstrap, gentoo and adelie written above them."> Artwork by <span class="citation" data-cites="allison_horst">@allison_horst</span></p>
+</section>
+<section id="reading-in-data" class="level2">
+<h2 class="anchored" data-anchor-id="reading-in-data">Reading in data</h2>
+<p>A researcher called <a href="https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php">Dr.&nbsp;Kristen Gorman</a> at the <a href="https://pallter.marine.rutgers.edu/">Palmer Station, Antarctica LTER</a>, a member of the <a href="https://lternet.edu/">Long Term Ecological Research Network</a>, collected data on penguins and shared that data so we can use it in R.</p>
+<p>We can load this data object called penguins into R using the function <code>data</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(penguins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To view the data, look at the environment tab in the top right window and click on the name of the object ‘penguins’.</p>
+<p>Look at the eight measurements, we call these variables. <img src="./images/culmen_depth.png" class="img-fluid" alt="Diagram of the head of a penguin with a double ended arrow shoing the bill length and another indicating the bill depth. Text says Note: In the raw data, bill dimensions are recorded as culmen length and culmen depth. The culmen is the dorsal ridge atop the bill"> Artwork by <span class="citation" data-cites="allison_horst">@allison_horst</span></p>
+<p><br></p>
+<p>Let’s explore our data. We can specify variables (columns of numbers) using the <code>$</code> operator:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>penguins<span class="sc">$</span>bill_length_mm</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>penguins<span class="sc">$</span>species</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can calculate the mean of bill length.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(penguins<span class="sc">$</span>bill_length_mm, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="co"># na.rm means remove NA (not available) data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 43.92193</code></pre>
+</div>
+</div>
+<p>But we can’t use the mean function on a factor.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(penguins<span class="sc">$</span>species, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning in mean.default(penguins$species, na.rm = TRUE): argument is not
+numeric or logical: returning NA</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><strong>Challenge</strong></p>
+<p>Copy, paste then edit the code above to find the mean of flipper_length_mm</p>
+</blockquote>
+<details>
+<summary>
+<strong>Solution to Challenge</strong>
+</summary>
+<p>Replace the text <code>bill_length_mm</code> variable with <code>flipper_length_mm</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(penguins<span class="sc">$</span>flipper_length_mm, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 200.9152</code></pre>
+</div>
+</div>
+</details>
+<blockquote class="blockquote">
+<p><strong>Challenge</strong></p>
+<p>Copy, paste then edit the code above to use the function <code>table</code> on the variable <code>species</code> to find out the number of each penguin species.</p>
+</blockquote>
+<details>
+<summary>
+<strong>Solution to Challenge</strong>
+</summary>
+<p>Change the function from <code>mean</code> to <code>table</code> and delete the argument <code>na.rm = TRUE</code> since is only needed for the function mean.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(penguins<span class="sc">$</span>species)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+   Adelie Chinstrap    Gentoo 
+      152        68       124 </code></pre>
+</div>
+</div>
+</details>
+<p><br></p>
+</section>
+<section id="creating-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="creating-graphs">Creating graphs</h2>
+<p><img src="./images/ggplot2_masterpiece.png" class="img-fluid" alt="A fuzzy monster in a beret and scarf, critiquing their own column graph on a canvas in front of them while other assistant monsters (also in berets) carry over boxes full of elements that can be used to customize a graph (like themes and geometric shapes). In the background is a wall with framed data visualizations. Stylized text reads “ggplot2: build a data masterpiece."> Artwork by <span class="citation" data-cites="allison_horst">@allison_horst</span></p>
+<section id="making-graphs-with-ggplot2" class="level3">
+<h3 class="anchored" data-anchor-id="making-graphs-with-ggplot2">Making graphs with ggplot2</h3>
+<p>To make a graph we need to tell R what <strong>data</strong> object we are using, what <strong>variables</strong> we want mapped onto the graph and what <strong>type</strong> of graph we want.</p>
+<p>For the ggplot function, the data and variable information are within the brackets. The type of graph is given on a line of code below that.</p>
+<p>Here’s a scatterplot of points of body mass against flipper length for each penguin:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/bodyMassflipperLength-scatter-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>In the command we use the <code>ggplot</code> function.</p>
+<p>We’ve passed in two arguments to <code>ggplot</code>. First, we tell <code>ggplot</code> what data we want to use to make the figure. In this example, that is the penguins data object.</p>
+<p>For the second argument called mapping, we used the <code>aes</code> function which is short for aesthetics, to say what variables we want mapped to what part of the graph. In other words what variables we want on the x and y axes.</p>
+<p>By itself, the call to <code>ggplot</code> isn’t enough to draw a figure:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We need another line of code with the function <code>geom_point</code>, which tells <code>ggplot</code> we want a scatterplot of points:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/bodyMass-vs-flipperLength-scatter-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><br></p>
+<p>We can add arguments to the geom_point brackets to control the size, transparency (<code>alpha</code>) and shape of the points.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span> </span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="st">"diamond"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing missing values (`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<blockquote class="blockquote">
+<p><strong>Challenge</strong></p>
+<p>Edit the code above so that the figure shows how <strong>bill length</strong> relates to flipper length:</p>
+</blockquote>
+<details>
+<summary>
+<strong>Solution to Challenge</strong>
+</summary>
+<p>Replace body_mass_g with bill_length_mm:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span> </span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="st">"diamond"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</details>
+<p><br></p>
+<blockquote class="blockquote">
+<p><strong>Challenge</strong></p>
+<p>Choose a different shape and edit the code to make a graph with points that shape. Change the numbers after <code>size =</code> and <code>alpha =</code> to see what happens.</p>
+</blockquote>
+<details>
+<summary>
+<strong>Solution to Challenge</strong>
+</summary>
+<p>Here is one possible solution:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span> </span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">10</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="st">"triangle"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing missing values (`geom_point()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-27-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</details>
+<p><br></p>
+</section>
+<section id="layers" class="level3">
+<h3 class="anchored" data-anchor-id="layers">Layers</h3>
+<p>More layers can be added to control the way a graph looks. For example, we can change the axes labels:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span> </span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="st">"diamond"</span>) <span class="sc">+</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Bill Length (mm)"</span>,</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Flipper Length (mm)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-28-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><br></p>
+<p>We could use a <code>theme</code> to control the background colour, gridlines, axis lines. Let’s use one called <code>theme_classic</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span> </span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>, <span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">shape =</span> <span class="st">"diamond"</span>) <span class="sc">+</span></span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Bill Length (mm)"</span>,</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Flipper Length (mm)"</span>) <span class="sc">+</span></span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-29-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="colour" class="level3">
+<h3 class="anchored" data-anchor-id="colour">Colour</h3>
+<p>If we want to specify that all points should be a blue colour, we use <code>colour =</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span> </span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">colour =</span> <span class="st">"blue"</span>) <span class="co"># Note the word blue is put in "speech marks".</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-30-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><br></p>
+<p>We can also colour the points according to what species they are. This information is in the variable called <code>species</code> in the data.</p>
+<p>Putting <code>colour = species</code> in the aes function in the <strong>geom</strong> line of code does this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span> </span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> species))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-31-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><br></p>
+<p>To specify what colours we want for each species we can use scale_colour_manual:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span> </span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> species)) <span class="sc">+</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"darkorange"</span>,<span class="st">"purple"</span>,<span class="st">"cyan4"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-32-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><br></p>
+<blockquote class="blockquote">
+<p><strong>Challenge</strong></p>
+<p>Choose three colours from this <a href="https://www.datanovia.com/en/blog/awesome-list-of-657-r-color-names/">website that lists R colours</a> and change the colours in the above code.</p>
+</blockquote>
+<details>
+<summary>
+<strong>Solution to Challenge</strong>
+</summary>
+<p>Here is one possible solution:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span> </span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> species)) <span class="sc">+</span></span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"dodgerblue"</span>,<span class="st">"hotpink"</span>,<span class="st">"forestgreen"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-33-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</details>
+<p><br></p>
+<blockquote class="blockquote">
+<p><strong>Extra Challenges</strong></p>
+<p>Now add a line of code that gives your graph x and y axes labels saying “Bill Length (mm)” and “Flipper Length (mm)” and a classic theme.</p>
+</blockquote>
+<details>
+<summary>
+<strong>Solution to Extra Challenges</strong>
+</summary>
+<p>Here is one possible solution:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> flipper_length_mm)) <span class="sc">+</span> </span>
+<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">colour =</span> species)) <span class="sc">+</span></span>
+<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_colour_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"dodgerblue"</span>,<span class="st">"hotpink"</span>,<span class="st">"forestgreen"</span>)) <span class="sc">+</span></span>
+<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Bill Length (mm)"</span>,</span>
+<span id="cb47-5"><a href="#cb47-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Flipper Length (mm)"</span>) <span class="sc">+</span></span>
+<span id="cb47-6"><a href="#cb47-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_classic</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-34-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</details>
+<p><br></p>
+<div class="darkorchidbox">
+<div class="center">
+<p><strong>Tip: creating plots</strong></p>
+</div>
+<p>When creating graphs, people adapt code from the internet by replacing the names of the data and variables in the example code with their data.</p>
+<p>If searching for ggplot layers that will control specific parts of your graph, using the correct graph terminology helps. For example, tick marks, levels, error bars, axes, legends.</p>
+</div>
+<p><br></p>
+<blockquote class="blockquote">
+<p><strong>Challenge if there’s time</strong></p>
+<p>A lot of a coders time is spent looking on the internet for solutions to problems and sometimes taking examples of code and adapting them using their own data.</p>
+<p>Look for some code on the internet that you could adapt to make a histogram of penguin body mass. Go to a search engine like google and type in “histogram in r ggplot”. Some good guides are STHDA and The R Graph Gallery. Copy, paste and edit the code so that the data you use is <code>penguins</code> and the variable on the x axis is <code>body_mass_g</code>.</p>
+<p>Alternatively, if you have a chatGPT or google bard account, ask it to “write r code to make a ggplot histogram using a data set named penguins and a variable on the x axis named body_mass_g”.</p>
+</blockquote>
+<details>
+<summary>
+<strong>Solution to Challenge if there’s time</strong>
+</summary>
+<p>The below code was found on STHDA:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Basic histogram</span></span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x=</span>weight)) <span class="sc">+</span> <span class="fu">geom_histogram</span>()</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Change the width of bins</span></span>
+<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x=</span>weight)) <span class="sc">+</span> </span>
+<span id="cb48-6"><a href="#cb48-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth=</span><span class="dv">1</span>)</span>
+<span id="cb48-7"><a href="#cb48-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Change colors</span></span>
+<span id="cb48-8"><a href="#cb48-8" aria-hidden="true" tabindex="-1"></a>p<span class="ot">&lt;-</span><span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x=</span>weight)) <span class="sc">+</span> </span>
+<span id="cb48-9"><a href="#cb48-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">color=</span><span class="st">"black"</span>, <span class="at">fill=</span><span class="st">"white"</span>)</span>
+<span id="cb48-10"><a href="#cb48-10" aria-hidden="true" tabindex="-1"></a>p</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>It could be adapted to:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2) <span class="co"># ignore this part as we have already loaded the package ggplot2</span></span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Basic histogram</span></span>
+<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x=</span>body_mass_g)) <span class="sc">+</span> <span class="fu">geom_histogram</span>() <span class="co"># changing df to penguins and weight to body_mass_g</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: Removed 2 rows containing non-finite values (`stat_bin()`).</code></pre>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-36-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>We could adapt the rest of the code too if we wanted to change the binwidth and colours.</p>
+<p><br></p>
+<p>Chat GPT gave:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the penguins dataset</span></span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(penguins, <span class="at">package =</span> <span class="st">"palmerpenguins"</span>)</span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the histogram using ggplot</span></span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(penguins, <span class="fu">aes</span>(<span class="at">x =</span> body_mass_g)) <span class="sc">+</span></span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Histogram of Body Mass"</span>,</span>
+<span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Body Mass (g)"</span>,</span>
+<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Count"</span></span>
+<span id="cb52-13"><a href="#cb52-13" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Again, we don’t need the pieces of code with the library and data functions as we have already loaded ggplot2 and the palmer penguins data.</p>
+</details>
+<p><br></p>
+</section>
+</section>
+<section id="recap-the-lingo" class="level2">
+<h2 class="anchored" data-anchor-id="recap-the-lingo">Recap the lingo!</h2>
+<p>Which of these words (functions, debugging, command) are the sentences below describing:</p>
+<ul>
+<li><p>a line of text written that tells the software what you want it to do</p></li>
+<li><p>trying to fix your code so that it works</p></li>
+<li><p>instructions represented by a short word that you can use in your code to get the software to perform a particular task</p></li>
+</ul>
+<p><br></p>
+</section>
+<section id="how-do-people-become-good-at-coding" class="level2">
+<h2 class="anchored" data-anchor-id="how-do-people-become-good-at-coding">How do people become good at coding?</h2>
+<p>Here’s a quote from a <a href="https://www.bestcolleges.com/bootcamps/guides/how-to-decide-if-coding-is-right-for-me/#:~:text=People%20who%20want%20to%20learn,who%20are%20uninterested%20in%20technology.">blog by Kasia Kovacs</a></p>
+<p><img src="./images/GoodAtCodingQuote.png" class="img-fluid">{fig-alt = “Although anybody can learn coding, not every person excels in programming. But that’s not because people don’t have the potential to become good. Instead, whether a person succeeds usually depends on their motivation to keep learning and practicing, even if it becomes difficult.”}</p>
+<p>Lots of people find it easier to learn a coding language when they need to get something done - an assignment or project. Doing something that you are interested in makes learning coding easier.</p>
+<p><br></p>
+</section>
+<section id="exploring-coding-further" class="level2">
+<h2 class="anchored" data-anchor-id="exploring-coding-further">Exploring coding further</h2>
+<p>To learn more of the basics of coding <a href="https://www.w3schools.com/">w3schools</a> is a good website. You can learn more R coding on a website. If you wanted to use R after this you could download <a href="https://posit.co/download/rstudio-desktop/">R and RStudio</a> for free onto your own laptop.</p>
+<p>Alternatively, you might consider learning a coding language called python, also on <a href="https://www.w3schools.com/">w3schools</a>. Learning python might be more motivating since there are more ideas for fun projects on the web that will encourage you to practice. Projects on the <a href="https://www.create-learn.us/blog/python-projects-for-kids/">Create &amp; Learn</a> blog are designed for kids but are the simplest and most entertaining.</p>
+<p><br></p>
+<p><br></p>
+<p><a href="https://github.com/acriach/reachforexcellence">Source</a><br>
+<a href="https://creativecommons.org/">CC Licensed</a></p>
+<p>Adapted from <a href="https://swcarpentry.github.io/r-novice-gapminder/">R for Reproducible Scientific Analysis</a> licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC_BY 4.0</a> by <a href="https://carpentries.org/">The Carpentries</a></p>
+
+
 </section>
 
 </main> <!-- /main -->

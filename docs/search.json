@@ -1,30 +1,100 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Quick Introduction to Coding Using R",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "objectID": "index.html#a-poll",
+    "href": "index.html#a-poll",
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "A poll",
+    "text": "A poll\nGo to kahoot.it to answer some anonymous questions."
   },
   {
-    "objectID": "index.html#you-need-a-programme-called-r-and-rstudio-too",
-    "href": "index.html#you-need-a-programme-called-r-and-rstudio-too",
-    "title": "Quick Introduction to Coding Using R",
-    "section": "You Need A Programme Called R and RStudio Too",
-    "text": "You Need A Programme Called R and RStudio Too\nYou need R to be running in the background while you use the nicer-to-use RStudio.\n\nWhen using a university computer, download R and RStudio from AppsAnywhere.\n\nClick the AppsAnywhere icon, scroll down to “Cran R” and click launch.\nOnce R has opened and downloaded onto the computer you can close it.\nNow go back into Apps Anywhere to find RStudio and launch that."
+    "objectID": "index.html#opening-rstudio",
+    "href": "index.html#opening-rstudio",
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "Opening RStudio",
+    "text": "Opening RStudio\nEveryone will code at the same time. You can code on your own, with a friend or just watch.\nYou need a programme called R to be running in the background while you interact with the nicer-to-use RStudio.\nOn a university computer, download R and RStudio from AppsAnywhere.\n\nClick the AppsAnywhere icon, scroll down to “Cran R” and click launch.\nOnce R has opened and downloaded onto the computer you can close it.\nNow go back into AppsAnywhere to find RStudio and launch that."
   },
   {
     "objectID": "index.html#basic-layout",
     "href": "index.html#basic-layout",
-    "title": "Quick Introduction to Coding Using R",
-    "section": "Basic Layout",
-    "text": "Basic Layout\nWhen you first open RStudio, you will see three panels:\n\nThe interactive R console (left)\nEnvironment/History (tabbed in upper right)\nFiles/Plots/Packages/Help/Viewer (tabbed in lower right)\n\n\nOnce you open files, such as R scripts another panel will open in the top left.\n\nClick on the white square with the plus in green icon top left."
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "Basic layout",
+    "text": "Basic layout\nWhen you first open RStudio, you will see three panels:\n\nThe interactive R console (left)\nEnvironment/History (tabbed in upper right)\nFiles/Plots/Packages/Help/Viewer (tabbed in lower right)\n\n\nOnce you open files, such as R scripts another panel will open in the top left.\n\nClick on the white square with the plus in green icon top left to open a script."
   },
   {
     "objectID": "index.html#working-in-rstudio",
     "href": "index.html#working-in-rstudio",
-    "title": "Quick Introduction to Coding Using R",
+    "title": "Cracking Codes: Adventures with Data",
     "section": "Working in RStudio",
-    "text": "Working in RStudio\nWe will write code in our .R file (script) and whenever we want, tell RStudio to run our code.\n\nThe simplest thing you can do with R is use it as a calculator. Type the below into the script:\n\n1 + 100\n\n[1] 101\n\n\n\nTo run a line of your script code in the R console, click on the Run button at the top right of the script.\nR tries to run your code and returns a result in the console window on the bottom left."
+    "text": "Working in RStudio\nWe will write code in our script file and tell RStudio to run our code when we’ve finished writing it.\nThe simplest thing you can do with R is use it as a calculator. Type the below into the script:\n\n100 - 1\n\nTo run this line of code from your script in the R console, click on the Run button at the top right of the script.\nR runs your code and returns a result in the console window on the bottom left.\nR will print out the answer, with a preceding [1]. Don’t worry about this. Think of it as merely indicating what line the output is on.\n\nIf you type in an incomplete command, for example:\n\n100 - \n\nR will show a + in the console window instead of a >. This means it’s waiting for you to complete the command.\nTo solve this error, the solution is to hit “Esc”. This cancels the command and RStudio will give you back the “>” prompt.\nThis is a big part of coding: writing some code, then problem solving or “debugging” to find out why it won’t work."
+  },
+  {
+    "objectID": "index.html#functions",
+    "href": "index.html#functions",
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "Functions",
+    "text": "Functions\nWe use functions to tell R what to do. To use a function, we can type its name, followed by open and closed brackets. Anything we type inside the brackets is called the function’s arguments:\n\n#|eval: FALSE\nsqrt(25) # this command calculates the square root of 25\n\n[1] 5\n\n\nThe text after each line of code is called a “comment”. Any comment after a hash symbol # is ignored by R when it runs code. These comments are just for us.\n\n#|eval: FALSE\nround(3.1415926, digits = 2) # this prints the number 3.1415926 to 2 decimal places\n\n[1] 3.14\n\n\nThe digits = argument in the function round tells R exactly how we what it to run the function. In this case we want to round the number to 2 decimal places.\n\n\n\nThere are thousands of R functions\n\nPeople don’t try to remember all the names of the many functions in R. You can google them or copy them from other people’s code."
+  },
+  {
+    "objectID": "index.html#objects-and-assignment",
+    "href": "index.html#objects-and-assignment",
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "Objects and assignment",
+    "text": "Objects and assignment\nWe can store values in objects using the assignment operator <-, like this:\n\nx <- 1/40\n\nNotice that this command does not print a value. Instead, we stored the number for later in the object x. x now contains the number 0.025. Look for the Environment tab in one of the panes of RStudio, and you will see that x and its value have appeared.\n\nx # this prints what's contained in object x\n\n[1] 0.025\n\n\n\nNow our object x can be used in place of a number in any function that expects a number:\n\nsqrt(x)\n\n[1] 0.1581139\n\n\n\nObject names are not limited to x. You can choose what you name an object.\n\nthe.result <- sqrt(x)\nmy_number <- round(3.1415926, digits = 2)\nBigPurpleBanana <- 101 + 99\n\n\nObjects can contain more than one number. For example:\n\ny <- 1:5 # 1:5 means 1,2,3,4 and 5\n\nThis is incredibly powerful as you can now run a function on all these numbers at once:\n\nlog(y)\n\n[1] 0.0000000 0.6931472 1.0986123 1.3862944 1.6094379\n\n\nOr use all the numbers in a calculation\n\nsum(y)\n\n[1] 15"
+  },
+  {
+    "objectID": "index.html#you-will-get-errors-and-warning-messages",
+    "href": "index.html#you-will-get-errors-and-warning-messages",
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "You will get errors and warning messages",
+    "text": "You will get errors and warning messages\nTry to run the following code:\n\nsum(z) # add up the numbers in an object called z\n\n\nmyData <- \"elephant\" # make a object containing a word\n\nmean(myData) # then try to calculate the mean (average) of the word elephant to show a warning message\n\n\n\n\nTip: Errors and Warnings\n\nErrors, like above, are thrown when R cannot proceed with a calculation. Warnings on the other hand usually mean that the function has run, but it may not have worked as expected.\nIn both cases, the message that R prints out can give you clues on how to fix a problem."
+  },
+  {
+    "objectID": "index.html#the-most-unrealistic-movie-scene-ever",
+    "href": "index.html#the-most-unrealistic-movie-scene-ever",
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "The most unrealistic movie scene ever",
+    "text": "The most unrealistic movie scene ever\n\nHacking scene from The Social Network\nLet’s correct the myths the scene portrays\n\nWhen you are coding you do not continuously type really fast on the keyboard.\n\n Posted on an online discussion forum called How do Hollywood movies and TV shows exaggerate programming and coding as done in real life\n\nCoders don’t often compete aginst each other. In reality, a coders work will not be done in a really competitive atmosphere. Although the industry is seen as competitive by many graduates (BCG report). Universities and lots of companies will support people to do the best coding they can. Projects often require a team of people to work collaboratively. And there are plenty of people who are kindly giving their time and knowledge to help others solve their coding problems in online forums. For example, people have answered over 23 million questions on one popular forum called Stack Overflow.\nCoders aren’t all men. All sorts of people do and can code. While there is a male bias in the industry BCG report the lack of diversity causes problems, for example, the algorithms behind some AI are biased towards recognising male voices more accurately. Negative perceptions around computer science affect girls decisions to study certain degrees (Sharma et al., 2021) and mean they might be missing out on interesting and rewarding careers. Groups like R Ladies aim to encourage coding skills in marginalised groups.\nThe overwhelming majority of people who code are not evil hackers doing harm and creating disruption but working on projects that solve problems and benefit society. To name a few, coders analyse government data to improve systems, create websites and apps that we all use, predict the weather, research new drugs and treatments: there is even an NHS R users group.\n\nAlso, I don’t think I’ve ever drank shots or been cheered on by a crowd while writing code!"
+  },
+  {
+    "objectID": "index.html#r-packages",
+    "href": "index.html#r-packages",
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "R Packages",
+    "text": "R Packages\nPeople all over the world are writing new R functions and uploading them on the internet in packages for everyone to use. A package needs to be installed onto your computer, then loaded using the function library before we can use the functions.\nWe can install and load these packages using this code:\n\ninstall.packages(\"ggplot2\")\ninstall.packages(\"dplyr\")\ninstall.packages(\"palmerpenguins\") # this downloads the packages ggplot that creates graphs, dplyr that manages data and palmerpenguins that contains example data\n\n\nlibrary(ggplot2)\nlibrary(dplyr)\nlibrary(palmerpenguins) # library gets the package loaded ready to be used\n\n\n Artwork by @allison_horst"
+  },
+  {
+    "objectID": "index.html#reading-in-data",
+    "href": "index.html#reading-in-data",
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "Reading in data",
+    "text": "Reading in data\nA researcher called Dr. Kristen Gorman at the Palmer Station, Antarctica LTER, a member of the Long Term Ecological Research Network, collected data on penguins and shared that data so we can use it in R.\nWe can load this data object called penguins into R using the function data.\n\ndata(penguins)\n\nTo view the data, look at the environment tab in the top right window and click on the name of the object ‘penguins’.\nLook at the eight measurements, we call these variables.  Artwork by @allison_horst\n\nLet’s explore our data. We can specify variables (columns of numbers) using the $ operator:\n\npenguins$bill_length_mm\npenguins$species\n\nWe can calculate the mean of bill length.\n\nmean(penguins$bill_length_mm, na.rm = TRUE) # na.rm means remove NA (not available) data\n\n[1] 43.92193\n\n\nBut we can’t use the mean function on a factor.\n\nmean(penguins$species, na.rm = TRUE)\n\nWarning in mean.default(penguins$species, na.rm = TRUE): argument is not\nnumeric or logical: returning NA\n\n\n[1] NA\n\n\n\nChallenge\nCopy, paste then edit the code above to find the mean of flipper_length_mm\n\n\n\nSolution to Challenge\n\nReplace the text bill_length_mm variable with flipper_length_mm.\n\nmean(penguins$flipper_length_mm, na.rm = TRUE)\n\n[1] 200.9152\n\n\n\n\nChallenge\nCopy, paste then edit the code above to use the function table on the variable species to find out the number of each penguin species.\n\n\n\nSolution to Challenge\n\nChange the function from mean to table and delete the argument na.rm = TRUE since is only needed for the function mean.\n\ntable(penguins$species)\n\n\n   Adelie Chinstrap    Gentoo \n      152        68       124"
+  },
+  {
+    "objectID": "index.html#creating-graphs",
+    "href": "index.html#creating-graphs",
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "Creating graphs",
+    "text": "Creating graphs\n Artwork by @allison_horst\n\nMaking graphs with ggplot2\nTo make a graph we need to tell R what data object we are using, what variables we want mapped onto the graph and what type of graph we want.\nFor the ggplot function, the data and variable information are within the brackets. The type of graph is given on a line of code below that.\nHere’s a scatterplot of points of body mass against flipper length for each penguin:\n\nggplot(data = penguins, mapping = aes(x = body_mass_g, y = flipper_length_mm)) +\n  geom_point()\n\n\n\n\nIn the command we use the ggplot function.\nWe’ve passed in two arguments to ggplot. First, we tell ggplot what data we want to use to make the figure. In this example, that is the penguins data object.\nFor the second argument called mapping, we used the aes function which is short for aesthetics, to say what variables we want mapped to what part of the graph. In other words what variables we want on the x and y axes.\nBy itself, the call to ggplot isn’t enough to draw a figure:\n\nggplot(data = penguins, mapping = aes(x = body_mass_g, y = flipper_length_mm))\n\nWe need another line of code with the function geom_point, which tells ggplot we want a scatterplot of points:\n\nggplot(data = penguins, mapping = aes(x = body_mass_g, y = flipper_length_mm)) +\n  geom_point()\n\n\n\n\n\nWe can add arguments to the geom_point brackets to control the size, transparency (alpha) and shape of the points.\n\nggplot(data = penguins, mapping = aes(x = bill_length_mm, y = flipper_length_mm)) + \n  geom_point(size = 5, alpha = 0.5, shape = \"diamond\")\n\nWarning: Removed 2 rows containing missing values (`geom_point()`).\n\n\n\n\n\n\nChallenge\nEdit the code above so that the figure shows how bill length relates to flipper length:\n\n\n\nSolution to Challenge\n\nReplace body_mass_g with bill_length_mm:\n\nggplot(data = penguins, mapping = aes(x = bill_length_mm, y = flipper_length_mm)) + \n  geom_point(size = 5, alpha = 0.5, shape = \"diamond\")\n\n\n\n\n\n\n\nChallenge\nChoose a different shape and edit the code to make a graph with points that shape. Change the numbers after size = and alpha = to see what happens.\n\n\n\nSolution to Challenge\n\nHere is one possible solution:\n\nggplot(data = penguins, mapping = aes(x = bill_length_mm, y = flipper_length_mm)) + \n  geom_point(size = 10, alpha = 0.5, shape = \"triangle\")\n\nWarning: Removed 2 rows containing missing values (`geom_point()`).\n\n\n\n\n\n\n\n\n\nLayers\nMore layers can be added to control the way a graph looks. For example, we can change the axes labels:\n\nggplot(data = penguins, mapping = aes(x = bill_length_mm, y = flipper_length_mm)) + \n  geom_point(size = 5, alpha = 0.5, shape = \"diamond\") +\n  labs(x = \"Bill Length (mm)\",\n       y = \"Flipper Length (mm)\")\n\n\n\n\n\nWe could use a theme to control the background colour, gridlines, axis lines. Let’s use one called theme_classic.\n\nggplot(data = penguins, mapping = aes(x = bill_length_mm, y = flipper_length_mm)) + \n  geom_point(size = 5, alpha = 0.5, shape = \"diamond\") +\n  labs(x = \"Bill Length (mm)\",\n       y = \"Flipper Length (mm)\") +\n  theme_classic()\n\n\n\n\n\n\n\nColour\nIf we want to specify that all points should be a blue colour, we use colour =:\n\nggplot(data = penguins, mapping = aes(x = bill_length_mm, y = flipper_length_mm)) + \n  geom_point(colour = \"blue\") # Note the word blue is put in \"speech marks\".\n\n\n\n\n\nWe can also colour the points according to what species they are. This information is in the variable called species in the data.\nPutting colour = species in the aes function in the geom line of code does this:\n\nggplot(data = penguins, mapping = aes(x = bill_length_mm, y = flipper_length_mm)) + \n  geom_point(aes(colour = species))\n\n\n\n\n\nTo specify what colours we want for each species we can use scale_colour_manual:\n\nggplot(data = penguins, mapping = aes(x = bill_length_mm, y = flipper_length_mm)) + \n  geom_point(aes(colour = species)) +\n  scale_colour_manual(values = c(\"darkorange\",\"purple\",\"cyan4\"))\n\n\n\n\n\n\nChallenge\nChoose three colours from this website that lists R colours and change the colours in the above code.\n\n\n\nSolution to Challenge\n\nHere is one possible solution:\n\nggplot(data = penguins, mapping = aes(x = bill_length_mm, y = flipper_length_mm)) + \n  geom_point(aes(colour = species)) +\n  scale_colour_manual(values = c(\"dodgerblue\",\"hotpink\",\"forestgreen\"))\n\n\n\n\n\n\n\nExtra Challenges\nNow add a line of code that gives your graph x and y axes labels saying “Bill Length (mm)” and “Flipper Length (mm)” and a classic theme.\n\n\n\nSolution to Extra Challenges\n\nHere is one possible solution:\n\nggplot(data = penguins, mapping = aes(x = bill_length_mm, y = flipper_length_mm)) + \n  geom_point(aes(colour = species)) +\n  scale_colour_manual(values = c(\"dodgerblue\",\"hotpink\",\"forestgreen\")) +\n  labs(x = \"Bill Length (mm)\",\n       y = \"Flipper Length (mm)\") +\n  theme_classic()\n\n\n\n\n\n\n\n\nTip: creating plots\n\nWhen creating graphs, people adapt code from the internet by replacing the names of the data and variables in the example code with their data.\nIf searching for ggplot layers that will control specific parts of your graph, using the correct graph terminology helps. For example, tick marks, levels, error bars, axes, legends.\n\n\n\nChallenge if there’s time\nA lot of a coders time is spent looking on the internet for solutions to problems and sometimes taking examples of code and adapting them using their own data.\nLook for some code on the internet that you could adapt to make a histogram of penguin body mass. Go to a search engine like google and type in “histogram in r ggplot”. Some good guides are STHDA and The R Graph Gallery. Copy, paste and edit the code so that the data you use is penguins and the variable on the x axis is body_mass_g.\nAlternatively, if you have a chatGPT or google bard account, ask it to “write r code to make a ggplot histogram using a data set named penguins and a variable on the x axis named body_mass_g”.\n\n\n\nSolution to Challenge if there’s time\n\nThe below code was found on STHDA:\n\nlibrary(ggplot2)\n# Basic histogram\nggplot(df, aes(x=weight)) + geom_histogram()\n# Change the width of bins\nggplot(df, aes(x=weight)) + \n  geom_histogram(binwidth=1)\n# Change colors\np<-ggplot(df, aes(x=weight)) + \n  geom_histogram(color=\"black\", fill=\"white\")\np\n\nIt could be adapted to:\n\nlibrary(ggplot2) # ignore this part as we have already loaded the package ggplot2\n# Basic histogram\nggplot(penguins, aes(x=body_mass_g)) + geom_histogram() # changing df to penguins and weight to body_mass_g\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\nWarning: Removed 2 rows containing non-finite values (`stat_bin()`).\n\n\n\n\n\nWe could adapt the rest of the code too if we wanted to change the binwidth and colours.\n\nChat GPT gave:\n\nlibrary(ggplot2)\n\n# Load the penguins dataset\ndata(penguins, package = \"palmerpenguins\")\n\n# Create the histogram using ggplot\nggplot(penguins, aes(x = body_mass_g)) +\n  geom_histogram() +\n  labs(\n    title = \"Histogram of Body Mass\",\n    x = \"Body Mass (g)\",\n    y = \"Count\"\n  )\n\nAgain, we don’t need the pieces of code with the library and data functions as we have already loaded ggplot2 and the palmer penguins data."
+  },
+  {
+    "objectID": "index.html#recap-the-lingo",
+    "href": "index.html#recap-the-lingo",
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "Recap the lingo!",
+    "text": "Recap the lingo!\nWhich of these words (functions, debugging, command) are the sentences below describing:\n\na line of text written that tells the software what you want it to do\ntrying to fix your code so that it works\ninstructions represented by a short word that you can use in your code to get the software to perform a particular task"
+  },
+  {
+    "objectID": "index.html#how-do-people-become-good-at-coding",
+    "href": "index.html#how-do-people-become-good-at-coding",
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "How do people become good at coding?",
+    "text": "How do people become good at coding?\nHere’s a quote from a blog by Kasia Kovacs\n{fig-alt = “Although anybody can learn coding, not every person excels in programming. But that’s not because people don’t have the potential to become good. Instead, whether a person succeeds usually depends on their motivation to keep learning and practicing, even if it becomes difficult.”}\nLots of people find it easier to learn a coding language when they need to get something done - an assignment or project. Doing something that you are interested in makes learning coding easier."
+  },
+  {
+    "objectID": "index.html#exploring-coding-further",
+    "href": "index.html#exploring-coding-further",
+    "title": "Cracking Codes: Adventures with Data",
+    "section": "Exploring coding further",
+    "text": "Exploring coding further\nTo learn more of the basics of coding w3schools is a good website. You can learn more R coding on a website. If you wanted to use R after this you could download R and RStudio for free onto your own laptop.\nAlternatively, you might consider learning a coding language called python, also on w3schools. Learning python might be more motivating since there are more ideas for fun projects on the web that will encourage you to practice. Projects on the Create & Learn blog are designed for kids but are the simplest and most entertaining.\n\n\nSource\nCC Licensed\nAdapted from R for Reproducible Scientific Analysis licensed CC_BY 4.0 by The Carpentries"
   }
 ]
