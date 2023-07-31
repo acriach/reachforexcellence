@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html#a-poll",
-    "href": "index.html#a-poll",
-    "title": "Cracking Codes: Adventures with Data",
-    "section": "A poll",
-    "text": "A poll\nGo to kahoot.it to answer some anonymous questions."
-  },
-  {
     "objectID": "index.html#opening-rstudio",
     "href": "index.html#opening-rstudio",
     "title": "Cracking Codes: Adventures with Data",
@@ -32,7 +25,7 @@
     "href": "index.html#functions",
     "title": "Cracking Codes: Adventures with Data",
     "section": "Functions",
-    "text": "Functions\nWe use functions to tell R what to do. To use a function, we can type its name, followed by open and closed brackets. Anything we type inside the brackets is called the function’s arguments:\n\n#|eval: FALSE\nsqrt(25) # this command calculates the square root of 25\n\n[1] 5\n\n\nThe text after each line of code is called a “comment”. Any comment after a hash symbol # is ignored by R when it runs code. These comments are just for us.\n\n#|eval: FALSE\nround(3.1415926, digits = 2) # this prints the number 3.1415926 to 2 decimal places\n\n[1] 3.14\n\n\nThe digits = argument in the function round tells R exactly how we what it to run the function. In this case we want to round the number to 2 decimal places.\n\n\n\nThere are thousands of R functions\n\nPeople don’t try to remember all the names of the many functions in R. You can google them or copy them from other people’s code."
+    "text": "Functions\nWe use functions to tell R what to do. To use a function, we can type its name, followed by open and closed brackets. Anything we type inside the brackets is called the function’s arguments:\n\nsqrt(25) # this command calculates the square root of 25\n\nThe text after each line of code is called a “comment”. Any comment after a hash symbol # is ignored by R when it runs code. These comments are just for us.\n\nround(3.1415926, digits = 2) # this prints the number 3.1415926 to 2 decimal places\n\nThe digits = argument in the function round tells R exactly how we what it to run the function. In this case we want to round the number to 2 decimal places.\n\n\n\nThere are thousands of R functions\n\nPeople don’t try to remember all the names of the many functions in R. You can google them or copy them from other people’s code."
   },
   {
     "objectID": "index.html#objects-and-assignment",
